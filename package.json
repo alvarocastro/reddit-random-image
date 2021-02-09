@@ -1,0 +1,36 @@
+{
+  "name": "reddit-random-image",
+  "version": "1.0.0",
+  "description": "Get a random image form a given reddit",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel src -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvarocastro/reddit-random-image.git"
+  },
+  "keywords": [
+    "reddit",
+    "random",
+    "image",
+    "gif",
+    "meme"
+  ],
+  "author": "Alvaro Castro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alvarocastro/reddit-random-image/issues"
+  },
+  "homepage": "https://github.com/alvarocastro/reddit-random-image#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.13",
+    "@babel/core": "^7.12.13",
+    "@babel/plugin-proposal-class-properties": "^7.12.13",
+    "@babel/preset-env": "^7.12.13"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.1",
+    "random-item": "^3.1.0"
+  }
+}
