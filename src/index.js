@@ -13,10 +13,12 @@ class RedditRandomImage {
 	}
 
 	filterPosts (posts) {
+		const domainre = /imgur|gfycat|tenor|giphy|tumblr|gifbin|imgflip|gif|jpe?g|png/i;
 		const filter = function (post) {
 			const hint = post.data.post_hint;
+			const domain = post.data.domain;
 
-			return hint === 'link' || hint === 'image';
+			return hint === 'image' || (hint === 'link' && domainre.test(domain));
 		};
 		return posts.filter(filter);
 	}

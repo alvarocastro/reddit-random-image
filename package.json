@@ -1,6 +1,6 @@
 {
   "name": "reddit-random-image",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get a random image form a given reddit",
   "main": "dist/index.js",
   "scripts": {
